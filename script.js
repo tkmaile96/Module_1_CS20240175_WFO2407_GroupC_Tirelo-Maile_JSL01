@@ -10,10 +10,17 @@ function validateSyntax() {
 
         //Validate Input agaisnt my Regular Expression
         if (expression.test(input)) {
-            result ="Valid Syntax "
+            result ="Valid Syntax ✅"
+        } else {
+            result = "Invalid Syntax ❌"
         }
 
             document.getElementById('result').innerText = result;
+}
+
+//Fuction to clear the Input
+function clearInput() {
+    document.getElementById('result').innerText= ''; //set 
 }
 
 
